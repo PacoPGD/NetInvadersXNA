@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{36c68673-d80e-4c8a-ae17-08333ec5c768}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Xbox 360</Platform>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetInvaders</RootNamespace>
+    <AssemblyName>NetInvaders</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Xbox 360</XnaPlatform>
+    <XnaCrossPlatformGroupID>d93cd415-cfd5-4a14-85d2-2ebb23136f38</XnaCrossPlatformGroupID>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>
+    </Thumbnail>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignManifests>false</SignManifests>
+    <ManifestCertificateThumbprint>63BBF13B34263555757027629BC6C2A63BAD8E8E</ManifestCertificateThumbprint>
+    <ManifestKeyFile>NetInvaders_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <XnaUpgrade>
+    </XnaUpgrade>
+    <XnaOutputType>Game</XnaOutputType>
+    <XnaProfile>HiDef</XnaProfile>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>C:\Documents and Settings\MAÑANA\Escritorio\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Xbox 360' ">
+    <OutputPath>bin\Xbox 360\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE;XBOX;XBOX360</DefineConstants>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Xbox 360' ">
+    <OutputPath>bin\Xbox 360\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE;XBOX;XBOX360</DefineConstants>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="Content\NetInvadersContent.contentproj">
+      <Project>{615F250F-2A7C-465E-A9A3-F7A5672D758D}</Project>
+      <Name>NetInvadersContent %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actores\Actor.cs" />
+    <Compile Include="Actores\Charla.cs" />
+    <Compile Include="Actores\DisparosEnemigos\BalaBarco.cs" />
+    <Compile Include="Actores\DisparosEnemigos\BalaGenerico.cs" />
+    <Compile Include="Actores\DisparosJugadores\balaAngel.cs" />
+    <Compile Include="Actores\DisparosJugadores\balared.cs" />
+    <Compile Include="Actores\DisparosJugadores\Bomba.cs" />
+    <Compile Include="Actores\DisparosJugadores\Escudo.cs" />
+    <Compile Include="Actores\DisparosJugadores\especiales\especialRed.cs" />
+    <Compile Include="Actores\Enemigos\Banzai.cs" />
+    <Compile Include="Actores\Enemigos\Barco.cs" />
+    <Compile Include="Actores\Enemigos\Bicicleta.cs" />
+    <Compile Include="Actores\Enemigos\Defensor.cs" />
+    <Compile Include="Actores\Enemigos\TiradorPreciso.cs" />
+    <Compile Include="Actores\Jugadores\Angel.cs" />
+    <Compile Include="Actores\Jugadores\Cless.cs" />
+    <Compile Include="Actores\Jugadores\eljugador.cs" />
+    <Compile Include="Actores\visorStart.cs" />
+    <Compile Include="Actores\DisparosJugadores\disparo.cs" />
+    <Compile Include="Actores\Enemigos\Enemigo.cs" />
+    <Compile Include="Actores\DisparosEnemigos\disparoEnemigo.cs" />
+    <Compile Include="Actores\DisparosJugadores\balaCless.cs" />
+    <Compile Include="Actores\DisparosJugadores\balaXavier.cs" />
+    <Compile Include="Actores\Jugadores\John.cs" />
+    <Compile Include="Actores\DisparosJugadores\balaJohn.cs" />
+    <Compile Include="decorado.cs" />
+    <Compile Include="Actores\DisparosJugadores\especiales\especialCless.cs" />
+    <Compile Include="Menus\EligeMisionEspecial.cs" />
+    <Compile Include="Explosion.cs" />
+    <Compile Include="Menus\pausa.cs" />
+    <Compile Include="Misiones\Naves\Mission2.cs" />
+    <Compile Include="Misiones\Secuencias\GameOver.cs" />
+    <Compile Include="Menus\eligeMision.cs" />
+    <Compile Include="Menus\eligeNave.cs" />
+    <Compile Include="Menus\numJugadores.cs" />
+    <Compile Include="Menus\menu.cs" />
+    <Compile Include="Misiones\Naves\creditos.cs" />
+    <Compile Include="Misiones\Naves\Fase.cs" />
+    <Compile Include="Misiones\Naves\Survival1.cs" />
+    <Compile Include="Actores\Jugadores\PlacaJugador.cs" />
+    <Compile Include="Actores\Enemigos\NaveGenerica.cs" />
+    <Compile Include="Actores\Enemigos\Piedra.cs" />
+    <Compile Include="Misiones\Naves\Mission1.cs" />
+    <Compile Include="Misiones\Secuencias\Secuencia2.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="Actores\Jugadores\RedStar.cs" />
+    <Compile Include="Actores\Jugadores\Xavier.cs" />
+    <Compile Include="Misiones\Secuencias\SecuenciaIntro.cs" />
+    <Compile Include="Misiones\Secuencias\Secuencia1.cs" />
+    <Compile Include="Misiones\Naves\Survival2.cs" />
+    <Compile Include="Textos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Textos.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png" />
+    <Content Include="Notas.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>615f250f-2a7c-465e-a9a3-f7a5672d758d</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.3.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Textos.en.resx" />
+    <EmbeddedResource Include="Textos.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Textos.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
